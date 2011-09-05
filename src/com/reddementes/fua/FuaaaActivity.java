@@ -5,21 +5,21 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.ImageButton;
+import android.widget.Button;
 
 public class FuaaaActivity extends Activity {
-    private ImageButton btnFua;
+    private Button btnFua;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
-		btnFua = (ImageButton) findViewById(R.id.button1);
+		btnFua = (Button) findViewById(R.id.button1);
 		btnFua.setOnClickListener(new View.OnClickListener() {
+			
 			@Override
 			public void onClick(View v) {
-				btnFua.setImageResource(R.drawable.pusheado);
 				Thread x = new Thread(new Runnable() {
 					@Override
 					public void run() {
