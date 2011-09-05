@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, FuaaaActivity!</string>
-    <string name="app_name">Fuaaa</string>
+    <string name="hello">Hello World, FuaMain!</string>
+    <string name="app_name">FUAAA</string>
+    <string name="FUAAA">FUAAA</string>
 </resources>
