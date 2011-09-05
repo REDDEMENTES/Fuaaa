@@ -3,5 +3,8 @@
     <string name="hello">Hello World, FuaMain!</string>
     <string name="app_name">FUAAA</string>
     <string name="FUAAA">FUAAA</string>
+    <string name="sound_opt">sonido...</string>
+    <string name="youtub_opt">ver video..</string>
+    <string name="share">comparte..</string>
     <string name="tittle">FUAAA!!!</string>
 </resources>

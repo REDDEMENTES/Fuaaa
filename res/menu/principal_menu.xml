@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item android:id="@+id/MnuOpc1" android:title="@string/sound_opt"
+		android:icon="@drawable/ic_menu_music"></item>
+	<item android:id="@+id/MnuOpc2" android:title="@string/youtub_opt"
+		android:icon="@drawable/ic_menu_movie"></item>
+	<item android:id="@+id/MnuOpc3" android:title="@string/share"
+		android:icon="@drawable/ic_menu_resize"></item>
+
+</menu>

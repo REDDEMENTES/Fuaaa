@@ -3,6 +3,8 @@ package com.reddementes.fua;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -35,5 +37,13 @@ public class FuaaaActivity extends Activity {
 			
 			
 		});
+				
+	}
+    
+    public boolean onCreateOptionsMenu(Menu menu) {
+	    //Alternativa 1
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.principal_menu, menu);
+	    return true;
 	}
 }

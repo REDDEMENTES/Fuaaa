@@ -15,18 +15,27 @@ public final class R {
         public static final int boton=0x7f020001;
         public static final int button=0x7f020002;
         public static final int button_push=0x7f020003;
-        public static final int icon=0x7f020004;
-        public static final int pusheado=0x7f020005;
-        public static final int pusheffect=0x7f020006;
+        public static final int ic_menu_movie=0x7f020004;
+        public static final int ic_menu_music=0x7f020005;
+        public static final int ic_menu_resize=0x7f020006;
+        public static final int icon=0x7f020007;
+        public static final int pusheado=0x7f020008;
+        public static final int pusheffect=0x7f020009;
     }
     public static final class id {
-        public static final int button1=0x7f060003;
-        public static final int buttonlayout=0x7f060000;
-        public static final int linearLayout1=0x7f060002;
-        public static final int textView1=0x7f060001;
+        public static final int MnuOpc1=0x7f070004;
+        public static final int MnuOpc2=0x7f070005;
+        public static final int MnuOpc3=0x7f070006;
+        public static final int button1=0x7f070003;
+        public static final int buttonlayout=0x7f070000;
+        public static final int linearLayout1=0x7f070002;
+        public static final int textView1=0x7f070001;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+    }
+    public static final class menu {
+        public static final int principal_menu=0x7f060000;
     }
     public static final class raw {
         public static final int fua1=0x7f040000;
@@ -35,6 +44,9 @@ public final class R {
         public static final int FUAAA=0x7f050002;
         public static final int app_name=0x7f050001;
         public static final int hello=0x7f050000;
-        public static final int tittle=0x7f050003;
+        public static final int share=0x7f050005;
+        public static final int sound_opt=0x7f050003;
+        public static final int tittle=0x7f050006;
+        public static final int youtub_opt=0x7f050004;
     }
 }
