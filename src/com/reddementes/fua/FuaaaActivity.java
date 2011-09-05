@@ -9,7 +9,6 @@ import android.widget.ImageButton;
 public class FuaaaActivity extends Activity {
     private ImageButton btnFua;
 
-	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,17 +18,20 @@ public class FuaaaActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				btnFua.setImageResource(R.drawable.pusheado);
-				new Thread(new Runnable() {
+				Thread x = new Thread(new Runnable() {
 					@Override
 					public void run() {
 						MediaPlayer mp = MediaPlayer.create(FuaaaActivity.this, R.raw.fua1);
 						mp.start();
 						while (mp.isPlaying()) {
 						}
-						btnFua.setImageResource(R.drawable.boton);
 					}
-				}).start();
+				});
+				x.start();
+				//btnFua.setImageResource(R.drawable.boton);
 			}
+			
+			
 		});
 	}
 }
