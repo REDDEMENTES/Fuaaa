@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageButton;
 
 public class FuaaaActivity extends Activity {
@@ -12,6 +13,7 @@ public class FuaaaActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 		btnFua = (ImageButton) findViewById(R.id.button1);
 		btnFua.setOnClickListener(new View.OnClickListener() {

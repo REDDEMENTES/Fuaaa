@@ -3,7 +3,33 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#FAFAFA"
     >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/buttonlayout" 
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="50dp"
+        android:height="35dp"
+        android:background="@drawable/background"
+        android:paddingTop="2dp" 
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp" 
+        android:gravity="center|left">
+        
+        <TextView android:text="@string/tittle" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#04B404"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/buttonlayout" 
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="2dp"
+                android:height="32dp" android:gravity="left|top" android:background="#04B404"
+                android:paddingTop="2dp" android:paddingBottom="2dp"/>
     <LinearLayout
     	android:layout_width="fill_parent"
     	android:id="@+id/linearLayout1"
