@@ -5,9 +5,11 @@
 		android:icon="@drawable/ic_menu_music">
 		<menu xmlns:android="http://schemas.android.com/apk/res/android">
 			<group android:checkableBehavior="single">
-				<item android:id="@+id/MnuOpc11" android:title="@string/sound_fua1" />
-				<item android:id="@+id/MnuOpc12" android:title="@string/sound_fua2" />
-				<item android:id="@+id/MnuOpc13" android:title="@string/sound_fua3" />
+				<item android:id="@+id/MnuOpc11" android:title="@string/sound_fua3" android:checked="true"/>
+				<item android:id="@+id/MnuOpc12" android:title="@string/sound_fua1" />
+				<item android:id="@+id/MnuOpc13" android:title="@string/sound_fua2" />
+				<item android:id="@+id/MnuOpc14" android:title="@string/sound_fua4" />
+				<item android:id="@+id/MnuOpc15" android:title="@string/sound_fua5" />
 			</group>
 		</menu>
 	</item>

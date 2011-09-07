@@ -4,10 +4,13 @@
     <string name="app_name">FUAAA</string>
     <string name="FUAAA">FUAAA</string>
     <string name="sound_opt">sonido...</string>
-    <string name="youtub_opt">ver video..</string>
-    <string name="share">comparte..</string>
+    <string name="youtub_opt">ver video...</string>
+    <string name="share">comparte...</string>
     <string name="tittle">FUAAA!!!</string>
-    <string name="sound_fua1">Fuaaa!!</string>
-    <string name="sound_fua2">Se proyecta hasta....</string>
-    <string name="sound_fua3">Esss dar el extra</string>
+    <string name="sound_fua3">Fua!!!</string>
+    <string name="sound_fua1">Ya no puedo</string>
+    <string name="sound_fua2">Caracter!!!</string>
+    <string name="sound_fua4">Fua Fua Fua!</string>
+    <string name="sound_fua5">FUAAAA!</string>
+    <string name="mje">Estoy lanzando un FUAAA!!! de una aplicación #android [ruta]</string>
 </resources>

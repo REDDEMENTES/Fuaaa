@@ -1,6 +1,7 @@
 package com.reddementes.fua;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -14,6 +15,7 @@ import android.widget.Button;
 
 public class FuaaaActivity extends Activity {
 	private Button btnFua;
+	private int sonido;
 	private String srcAudio = null;
 
 	@Override
@@ -21,6 +23,7 @@ public class FuaaaActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
+		sonido = R.raw.fua3;
 		btnFua = (Button) findViewById(R.id.button1);
 		btnFua.setOnClickListener(new View.OnClickListener() {
 
@@ -30,14 +33,13 @@ public class FuaaaActivity extends Activity {
 					@Override
 					public void run() {
 						MediaPlayer mp = MediaPlayer.create(FuaaaActivity.this,
-								R.raw.fua1);
+								sonido);
 						mp.start();
 						while (mp.isPlaying()) {
 						}
 					}
 				});
 				x.start();
-				// btnFua.setImageResource(R.drawable.boton);
 			}
 
 		});
@@ -54,37 +56,62 @@ public class FuaaaActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		boolean returnSt=false;
+		boolean returnSt = false;
 		try {
+			item.setChecked(true);
 			switch (item.getItemId()) {
 			case R.id.MnuOpc11:
 				srcAudio = "Fua";
+				sonido = R.raw.fua3;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc12:
 				srcAudio = "Fua2";
+				sonido = R.raw.fua1;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc13:
 				srcAudio = "Fua3";
+				sonido = R.raw.fua2;
+				returnSt = true;
+				break;
+			case R.id.MnuOpc14:
+				srcAudio = "Fua4";
+				sonido = R.raw.fua4;
+				returnSt = true;
+				break;
+			case R.id.MnuOpc15:
+				srcAudio = "Fua5";
+				sonido = R.raw.fua5;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc2:
-				startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("vnd.youtube://JVept9huYIY")));
+				startActivity(new Intent(Intent.ACTION_VIEW,
+						Uri.parse("vnd.youtube://JVept9huYIY")));
 				returnSt = true;
 				break;
 			case R.id.MnuOpc3:
 				srcAudio = "Compartir";
+				share();
 				returnSt = true;
 				break;
 			default:
 				return super.onOptionsItemSelected(item);
 			}
 		} catch (Exception e) {
-			
+
 		}
 		return returnSt;
 
+	}
+
+	public void share() {
+		String subject="sub";
+		Intent intent = new Intent(Intent.ACTION_SEND);
+		intent.setType("text/plain");
+		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+		intent.putExtra(Intent.EXTRA_TEXT, "Estoy lanzando un FUAAA!!! de una aplicación #android hecha por @REDDEMENTES [ruta]");
+		startActivity(Intent.createChooser(intent,getString(R.string.share)));
 	}
 
 	private void goVideo() {
