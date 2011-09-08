@@ -12,11 +12,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class FuaaaActivity extends Activity {
 	private Button btnFua;
 	private int sonido;
 	private String srcAudio = null;
+	private int img;
+	private ImageView imageView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public class FuaaaActivity extends Activity {
 		setContentView(R.layout.main);
 		sonido = R.raw.fua3;
 		btnFua = (Button) findViewById(R.id.button1);
+		imageView=(ImageView) findViewById(R.id.ImageView1);
 		btnFua.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -34,6 +38,7 @@ public class FuaaaActivity extends Activity {
 					public void run() {
 						MediaPlayer mp = MediaPlayer.create(FuaaaActivity.this,
 								sonido);
+						imageView.setImageResource(img);
 						mp.start();
 						while (mp.isPlaying()) {
 						}
@@ -63,26 +68,31 @@ public class FuaaaActivity extends Activity {
 			case R.id.MnuOpc11:
 				srcAudio = "Fua";
 				sonido = R.raw.fua3;
+				img =R.drawable.bubble_fua;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc12:
 				srcAudio = "Fua2";
 				sonido = R.raw.fua1;
+				img =R.drawable.bubble_puedo;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc13:
 				srcAudio = "Fua3";
 				sonido = R.raw.fua2;
+				img =R.drawable.bubble_caracter;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc14:
 				srcAudio = "Fua4";
 				sonido = R.raw.fua4;
+				img =R.drawable.bubble_fuafua;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc15:
 				srcAudio = "Fua5";
 				sonido = R.raw.fua5;
+				img =R.drawable.bubble_fuaaa;
 				returnSt = true;
 				break;
 			case R.id.MnuOpc2:

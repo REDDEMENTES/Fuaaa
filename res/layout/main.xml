@@ -33,13 +33,18 @@
     <LinearLayout
     	android:layout_width="fill_parent"
     	android:id="@+id/linearLayout1"
-    	android:orientation="vertical"
-    	android:layout_height="fill_parent" android:gravity="center">
+    	android:layout_height="fill_parent" android:gravity="center" android:orientation="vertical">
+   		
+   		<ImageView
+   			android:id="@+id/ImageView1"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:src="@drawable/bubble_fua"/>
+        
         
         <Button 
         	android:layout_width="wrap_content" 
         	android:layout_height="wrap_content" 
-        	android:gravity="center" 
         	android:id="@+id/button1" 
         	android:background="@drawable/pusheffect"></Button>
         
