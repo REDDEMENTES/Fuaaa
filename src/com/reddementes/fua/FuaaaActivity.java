@@ -33,12 +33,12 @@ public class FuaaaActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+				imageView.setImageResource(img);
 				Thread x = new Thread(new Runnable() {
 					@Override
 					public void run() {
 						MediaPlayer mp = MediaPlayer.create(FuaaaActivity.this,
 								sonido);
-						imageView.setImageResource(img);
 						mp.start();
 						while (mp.isPlaying()) {
 						}
