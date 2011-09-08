@@ -2,9 +2,9 @@
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
   <item android:state_pressed="true"
-              android:drawable="@drawable/pusheado"/> 
+              android:drawable="@drawable/push_botton"/> 
   <item android:state_focused="true"
-  		android:drawable="@drawable/pusheado" /> 
-  <item android:drawable="@drawable/boton" />
+  		android:drawable="@drawable/push_botton" /> 
+  <item android:drawable="@drawable/botton" />
 
 </selector>

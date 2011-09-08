@@ -110,7 +110,7 @@ public class FuaaaActivity extends Activity {
 		Intent intent = new Intent(Intent.ACTION_SEND);
 		intent.setType("text/plain");
 		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
-		intent.putExtra(Intent.EXTRA_TEXT, "Estoy lanzando un FUAAA!!! de una aplicación #android hecha por @REDDEMENTES [ruta]");
+		intent.putExtra(Intent.EXTRA_TEXT, "Estoy lanzando un FUAAA!!! de una aplicaciï¿½n #android hecha por @REDDEMENTES [ruta]");
 		startActivity(Intent.createChooser(intent,getString(R.string.share)));
 	}
 
