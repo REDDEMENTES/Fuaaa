@@ -19,7 +19,7 @@ public final class R {
         public static final int bubble_fuaaa=0x7f020005;
         public static final int bubble_fuafua=0x7f020006;
         public static final int bubble_puedo=0x7f020007;
-        public static final int button_push=0x7f020008;
+        public static final int fuaaa4=0x7f020008;
         public static final int ic_menu_movie=0x7f020009;
         public static final int ic_menu_music=0x7f02000a;
         public static final int ic_menu_resize=0x7f02000b;
