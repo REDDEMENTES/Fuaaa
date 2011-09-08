@@ -106,7 +106,7 @@ public class FuaaaActivity extends Activity {
 	}
 
 	public void share() {
-		String subject="sub";
+		String subject="WOW!!!";
 		Intent intent = new Intent(Intent.ACTION_SEND);
 		intent.setType("text/plain");
 		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
