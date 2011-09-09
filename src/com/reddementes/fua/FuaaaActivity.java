@@ -105,7 +105,7 @@ public class FuaaaActivity extends Activity implements View.OnClickListener, Run
 		intent.setType("text/plain");
 		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
 		intent.putExtra(Intent.EXTRA_TEXT,
-				"Estoy lanzando un FUAAA!!! de una aplicacion #android hecha por @REDDEMENTES [ruta]");
+				"Estoy lanzando un FUAAA!!! de una aplicacion #android hecha por @REDDEMENTES market.reddementes.net/fua");
 		startActivity(Intent.createChooser(intent, getString(R.string.share)));
 	}
 }

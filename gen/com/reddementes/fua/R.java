@@ -19,14 +19,16 @@ public final class R {
         public static final int bubble_fuaaa=0x7f020005;
         public static final int bubble_fuafua=0x7f020006;
         public static final int bubble_puedo=0x7f020007;
-        public static final int fuaaa4=0x7f020008;
-        public static final int ic_menu_movie=0x7f020009;
-        public static final int ic_menu_music=0x7f02000a;
-        public static final int ic_menu_resize=0x7f02000b;
-        public static final int icon=0x7f02000c;
-        public static final int push_botton=0x7f02000d;
-        public static final int pusheado=0x7f02000e;
-        public static final int pusheffect=0x7f02000f;
+        public static final int button_push=0x7f020008;
+        public static final int fuaaa4=0x7f020009;
+        public static final int ic_menu_movie=0x7f02000a;
+        public static final int ic_menu_music=0x7f02000b;
+        public static final int ic_menu_resize=0x7f02000c;
+        public static final int ic_menu_share=0x7f02000d;
+        public static final int icon=0x7f02000e;
+        public static final int push_botton=0x7f02000f;
+        public static final int pusheado=0x7f020010;
+        public static final int pusheffect=0x7f020011;
     }
     public static final class id {
         public static final int ImageView1=0x7f070003;

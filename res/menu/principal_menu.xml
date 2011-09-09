@@ -17,6 +17,6 @@
 		android:icon="@drawable/ic_menu_movie"></item>
 		
 	<item android:id="@+id/MnuOpc3" android:title="@string/share"
-		android:icon="@drawable/ic_menu_resize"></item>
+		android:icon="@drawable/ic_menu_share"></item>
 
 </menu>
