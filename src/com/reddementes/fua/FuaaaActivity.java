@@ -31,14 +31,12 @@ public class FuaaaActivity extends Activity implements View.OnClickListener, Run
 		btnFua.setOnClickListener(this);
 	}
 
-	@Override
 	public void onClick(View v) {
 		imageView.setImageResource(img);
 		imageView.setVisibility(ImageView.VISIBLE);
 		new Thread(this).start();
 	}
 
-	@Override
 	public void run() {
 		mp = MediaPlayer.create(FuaaaActivity.this, sonido);
 		mp.start();
@@ -105,7 +103,7 @@ public class FuaaaActivity extends Activity implements View.OnClickListener, Run
 		intent.setType("text/plain");
 		intent.putExtra(Intent.EXTRA_SUBJECT, subject);
 		intent.putExtra(Intent.EXTRA_TEXT,
-				"Estoy lanzando un FUAAA!!! de una aplicacion #android hecha por @REDDEMENTES market.reddementes.net/fua");
+				"Estoy lanzando un FUAAA!!! de una aplicacion #android hecha por @REDDEMENTES <a href=\"http://www.market.reddementes.net/fua\">market.reddementes.net/fua</a>");
 		startActivity(Intent.createChooser(intent, getString(R.string.share)));
 	}
 }
